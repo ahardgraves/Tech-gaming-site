@@ -1,0 +1,328 @@
+
+*   
+		{ 
+				box-sizing: border-box; /* Apply box and borders to all html elements on page */
+    	} 
+
+header, main, nav, footer, section, article, figure, figcaption, aside /* Provides backward compatability with older browsers */
+
+		{		
+				display: block; /*Displays an element as a block element. It starts on a new line, and takes up the whole width*/
+		}
+
+h1 
+		{	
+				background-image: url(gallaxy.gif);/* Rotating digital gallaxy */
+				background-repeat: no-repeat; /* Backgound image will not repeat in heading */
+				background-position: right; /* Background image apears on the right hand side of heading 1 */
+				background-position: right top;
+				background-repeat: no-repeat; /* The background image does not repeat */
+				height: 120px; /* Height of background imaga */
+				background-size: 5em;
+				text-align: center; /* Text is in center of heading 1 */
+				padding-top: 30px; 
+				padding-left: 3em;
+				font-family: Impact, Jokerman, sans-serif; /* Font type of text in heading 1 */
+				font-size: 3em;
+				letter-spacing: 0.15em; /* Spacing between each letter is a quarter of a pixel wide */
+				background-color: #000000; color: #CCFFFF; margin-bottom: 0; /* Black background and very pale cyan text */
+				text-shadow: 1px 1px 1px #FFFFFF; /* Text shadow color white */
+
+				animation-name: example;
+    			animation-duration: 4s;
+    			animation-iteration-count: infinite;
+		}
+
+@keyframes example 
+		{
+    from 		{color: #000000;} /* Keyframes will allow gradual change from one style to the next / color is black*/
+    to 			{color: #CCFFFF;} /* Color is very pale cyan / Creates glowing effects of the text */
+		}
+
+body 
+		{ 	
+				background-color: #000000; color: #CCFFFF;  /* Black background and very pale cyan colored text */  
+			 	font-family: Arial, Helvetica, Papyrus;  /* Font type of text in body section */
+			 	text-align: center;
+			 	text-shadow: 1px 1px 1px #000000; /* Text shadow color black */
+		}
+
+nav
+		{	
+				padding: 1.5px; /* Padding around entire navigation area */
+				font-size: 120%;
+				float: left; /* Navigation is on left side of page */
+				width: 160;
+				font-family: Impact, Jokerman, Papyrus; 
+   	 	}
+
+nav ul
+		{	
+				list-style-type: none; margin: 0; padding: 0; font-size: 1.2em; /* No marker style for navigation links, no empty space, no padding */
+    	}
+
+
+nav a 
+		{ 	
+				text-decoration: none; /* No underline for navigation section */
+				background-image: url(techsprite.gif); /* Image of rotating technology sphere */
+				display: block; /*Will display navigation in a blocked area on the page with space */
+				padding: 20px;
+				background-color: #000000; /*Background color is black */
+				border: 1px solid #CCFFFF; /*Border is very pale cyan */
+				background-repeat: no-repeat; /*Back ground image "techsprite" does not repeat */
+				background-position: right 0; /*Techsprite image will display to right of text in nav area */
+				background-size: 2em; /* Techsprite image will be diplayed at the size of 2em */
+		} 
+
+nav a:link { color: #5C7FA3; } /* Will display color dark blue when navigation link has NOT been visited, clicked or hovered over */
+
+nav a:visited { color: #333399; } /* Will display color dark purple when navigation link has been visited */
+
+nav a:hover { color: #CCFFFF; }  /* Will display color very pale cyan when mouse hovers over navigation link */
+
+main
+    	{	
+		    	padding-top: 1px;
+		    	padding-right: 20px;
+		    	padding-bottom: 115px;
+		    	padding-left: 30px;
+		    	background-color: #333399; /* Background color is dark purple */
+		    	margin-left: 115px;
+		    	border: 1px solid #CCFFFF;/*Solid pale cyan border around purple box area in main section */
+    	}
+
+main ul  
+
+		{		
+				list-style-type: none; /* No markers in unordered list */
+
+		}
+
+h2  
+		{	
+			    color: #CCFFFF; /* Very pale cyan text color */
+			    padding-top: 5px;  
+			    text-shadow: 1px 1px 1px #000000; /* Text shadow color black */
+			    text-align: center;
+		}
+
+h3 
+		{ 
+			   	color: #99CC66;	/* Pea green text color */
+			   	text-shadow: 1px 1px 1px #CCCCCC; /* Text shadow color of light gray */
+	  			font-family: Georgia, "Times New Roman", serif; /* Font type of heading 3 */
+    	}
+
+footer 
+		{ 
+			  	font-family: Georgia, "Times New Roman", serif; /* Font type of text in footer */
+			  	padding-top: 1px;
+		     	padding-right: 20px;
+		     	padding-bottom: 20px;
+		      	padding-left: 20px;
+		      	display: block; /* Displays element as a block and starts on a new line / takes up whole width */
+		      	text-align: center;
+			  	font-style: italic;
+			  	font-size: 75%; 
+			  	margin-left: 113px;
+			  	background-color: #000000; /* Black background color of footer */
+		}
+
+
+label 
+		{
+				float: left; /* Lable boxes of forms will to left side of page */
+				display: block;
+				text-align: right; /* Text will be on the right side of label boxes */
+				width: 120px;
+				padding-right: 130px;
+
+		}
+
+input 	
+		{
+				display: block;/* Displays element as a block in form area and starts on a new line / takes up whole width */
+				margin-bottom: 20px;
+		}
+
+textarea
+		{
+				display: block;/* Displays element in form as a block and starts on a new line / takes up whole width */
+				margin-bottom: 20px;	
+		}
+
+input[type="submit"] /* Configures the submit button function of the form */
+		{
+				margin-left: 130px;
+		}
+
+.resort 
+		{ 
+			  	color: #99CC66; /* Blue text color of class */
+			  	font-weight: bold; /* Bold font for class */
+			  	text-shadow: 3px color: 000000; /*Text shadow black */
+			  	animation-name: example;
+    			animation-duration: 4s;
+    			animation-iteration-count: infinite;
+    	}
+
+.citation
+		{
+				font-style: italic;
+				text-align: left;
+		}
+#mobile
+		{
+				display: none;
+		}
+
+#charge 
+		{ 
+				background-image: url(dragonballz.gif);  /* Background image of Goku Charging up ID charge */
+			  	background-repeat: no-repeat;  /* The background image does not repeat */
+			  	height: 420px;
+			  	background-size: 100% 100%;
+			  	margin-left: 115px;
+			  	border: 1px solid #CCFFFF; /* Very pale cyan border */
+		}
+
+#homehero
+		{ 
+			  	background-image: url(tech3.gif);  /* Background image of hieroglyphics moving towards audience ID homehero */
+			  	background-repeat: no-repeat;  /* The background image does not repeat */
+			  	height: 420px;
+			  	background-size: 100% 100%;
+			  	margin-left: 115px;
+			  	border: 1px solid #CCFFFF;	
+		}
+
+#yurthero
+    	{ 
+		      	background-image: url(waves.gif);  /* Background image of house on beach of ID yurtshero */
+			  	background-repeat: no-repeat;  /* The background image does not repeat */
+			  	height: 420px;
+			  	background-size: 100% 100%;
+			  	margin-left: 115px;
+			  	border: 1px solid #CCFFFF;
+		}
+
+#trailhero
+    	{ 
+		      	background-image: url(kinstinct.gif); /* Background image video game Killer Instinct ID trailhero */
+			  	background-repeat: no-repeat;  /* The background image does not repeat */
+			  	height: 420px;
+			  	background-size: 100% 100%;
+			  	margin-left: 115px;
+			  	border: 1px solid #CCFFFF;
+		}
+
+#gallery a
+		{
+				text-decoration: none; color: #CCFFFF; font-style: italic;
+				border: 2px solid #99CC66; /* Pea green border */
+		}
+		 
+#gallery span
+		{
+				display: none; /* Will not display til cursor hovers over thumbnail image */
+		}
+
+#gallery a:hover span 
+		{
+				display: block; position: static; /* Elements render in order, as they appear in the document flow */
+				top: 10px; left: 300px; text-align: center;
+		}
+
+@media only screen and (max-width: 64em) /* Responsive web design technique used to enhance viewing of webpage on tablets  */
+		{
+				body 	   { margin: 0; background-color: #FFFFFF, } /* White background color */
+				
+
+				header 	   { 
+							 padding-top: 0.5em; 
+							 padding-bottom: 0.5em; 
+							 padding-left: 0; 
+							 height: auto; 
+						   }
+				
+				h1 		   { letter-spacing: 0.1em; } /* Spacing between each leter */
+				
+				main       { margin-left: 0; }
+				
+				nav        { float: none; /* Will not float and text will be centered */							
+							 width: auto; 
+							 text-align: center; 
+							 padding: 0.5em; 
+						   } 
+				
+				nav li     { 
+							 display: inline-block; /* inline-block" does not add a line break after element / will sit next to element */
+							 padding-top: 0.25em; 
+							 padding-bottom: 0.25em; 
+							 padding-left: 0.75em; 
+							 padding-right: 0.75em;
+						   } 
+				
+				#homehero  { margin-left: 0; height: 200px; }
+				
+				#yurthero  { margin-left: 0; height: 200px; }
+				
+				#trailhero { margin-left: 0; height: 200px; }
+
+				#charge	   { margin-left: 0; height: 200px; }
+				
+				footer	   { margin-left: 0; }
+		}
+
+@media only screen and (max-width: 37.5em) /* Responsive web design technique used to enhance viewing of webpage on smartphones  */
+		{		
+				main       { 
+							 padding-top: 0.1em; 
+							 padding-bottom: 0.1em; 
+							 padding-left: 1em; 
+							 padding-right: 1em; 
+							 font-size: 90%; 
+						   }
+
+				h1 		   { font-size: 2em; } 
+
+				nav        { padding: 0; } 
+
+				nav li     { display: block; /* "display block" used to inform older browers to display HTML5 elements */
+							 margin: 0; 
+							 border-bottom: solid; 
+							 color: #CCFFFF;/* Color is very pale cyan */
+						   }  
+				
+				nav a      { display: block; } /* "Block display" here will provide a larger nav area for viewer to tap */
+
+				label 	   { float: none; text-align: left;}
+
+				input[type="submit"] 
+						   {margin-left: 0;} /* Eliminates the submit buttons left margin */
+				
+				#homehero  { background-image: none; height: 0; } /* background image will not display */
+				
+				#yurthero  { background-image: none; height: 0; }
+				
+				#trailhero { background-image: none; height: 0; }
+				
+				#mobile	   { display: inline; } /* hieght and width properties will have no effect */
+				
+				#desktop   { display: none; }
+				
+				#homehero  { background-image: none; height: 0; } /* background image will not display */
+				
+				#yurthero  { background-image: none; height: 0; }
+				
+				#trailhero { background-image: none; height: 0; }
+				
+				#mobile	   { display: inline; } /* hieght and width properties will have no effect */
+
+				#charge    { display: none; }
+		}
+
+
+
+		 
